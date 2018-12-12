@@ -9,6 +9,9 @@ open Swensen.Unquote
 
     Implement the function fizzBuzz that generates a list of strings. If a number is divisible by 3, make the string "Fizz", if by 5 it should be "Buzz". If it's divisible by both, make it "FizzBuzz". For every other number just make it a stringified version of the number, e.g. "4".
 
+    ## Hint:
+    The function `string` stringifies a number. E.g. string 123 = "123"
+
 *)
 
 // Add your implementation here

@@ -1,4 +1,4 @@
-module Kata1
+﻿module Kata1
 
 open Xunit
 open Swensen.Unquote
@@ -7,7 +7,7 @@ open Swensen.Unquote
 
     # Summing a list
 
-    Implement sum which sums a list of numbers, both positive and negative.
+    Implement sum which sums a list of numbers, both positive and negative (without using List.sum or List.sumBy 😬)
 
     Bonus points for making it work with an empty list.
 

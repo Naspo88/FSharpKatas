@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpKata2", "FSharpKata2\FSharpKata2.fsproj", "{A74F5772-6212-4D3D-A0BD-0BBFB861F6A7}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpKatas", "FSharpKatas\FSharpKatas.fsproj", "{A74F5772-6212-4D3D-A0BD-0BBFB861F6A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

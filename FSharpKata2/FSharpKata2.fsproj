@@ -13,6 +13,9 @@
     </Content>
     <Compile Include="Kata1.fs" />
     <Compile Include="Kata2.fs" />
+    <Compile Include="Kata3.fs" />
+    <Compile Include="Kata4.fs" />
+    <Compile Include="Kata5.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

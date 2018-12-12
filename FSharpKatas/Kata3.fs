@@ -24,8 +24,8 @@ open Swensen.Unquote
 *)
 
 // Add function implementation
-let lostSheep (friCount : int list) (satCount : int list) (totalSheep : int) : int = 0
-
+let lostSheep (friCount : int list) (satCount : int list) (totalSheep : int) : int =
+    totalSheep - ((List.sum friCount) + (List.sum satCount))
 
 
 [<Fact>]

@@ -14,12 +14,13 @@ open Swensen.Unquote
 *)
 
 // Add function implementation
-let sum (list : int list) : int = 0
-
-
-
-
-
+let sum (values : int list) : int =
+    let mutable (result: int) = 0
+    if values.Length <> 0 then
+        for value in values do
+            result <- result + value
+    result
+    
 
 [<Fact>]
 let ``Add singleton`` () =

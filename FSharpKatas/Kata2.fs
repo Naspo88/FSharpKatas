@@ -8,7 +8,15 @@ open Swensen.Unquote
 
     # Averages of numbers
 
-    The accounts of the "Fat to Fit Club (FFC)" association are supervised by John as a volunteered accountant. The association is funded through financial donations from generous benefactors. John has a list of the first n donations: [14, 30, 5, 7, 9, 11, 15] He wants to know how much the next benefactor should give to the association so that the average of the first n + 1 donations should reach an average of 30. After doing the math he found 149. He thinks that he made a mistake. Could you help him?
+    The accounts of the "Fat to Fit Club (FFC)" association are supervised by John as a volunteered accountant. 
+    
+    The association is funded through financial donations from generous benefactors. 
+    
+    John has a list of the first n donations: [14, 30, 5, 7, 9, 11, 15] 
+    
+    He wants to know how much the next benefactor should give to the association so that the average of the first n + 1 donations should reach an average of 30. 
+    
+    After doing the math he found 149. He thinks that he made a mistake. Could you help him?
 
     if dons = [14, 30, 5, 7, 9, 11, 15] then (forAverage dons 30) = 149
 
@@ -20,10 +28,12 @@ open Swensen.Unquote
 
 
 // Add function implementation
-let forAverage (dons : int list) (expectedAvg : int) : int option = None
-
-
-
+let forAverage (dons : int list) (expectedAvg : int) : int option =
+    let res = expectedAvg * (List.length dons + 1) - List.sum dons
+    if res < 0 then
+        None
+    else
+        Some res
 
 
 let dons = [ 14; 30; 5; 7; 9; 11; 15 ]
@@ -35,8 +45,8 @@ let ``For average of 30`` () =
 
 [<Fact>]
 let ``For average of 92`` () =
-    let result = forAverage dons 645
-    test <@ result = Some 0 @>
+    let result = forAverage dons 92
+    test <@ result = Some 645 @>
 
 [<Fact>]
 let ``For negative requirement`` () =

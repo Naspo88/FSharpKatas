@@ -15,12 +15,21 @@ open Swensen.Unquote
 *)
 
 // Add your implementation here
-let fizzBuzz (start : int) (max : int) : string list = []
+let fizzBuzz (start : int) (max : int) : string list =
+    let arr = [start..max]
+    let stringifyNumber (value: int): string =
+        if value%3 = 0 && value%5 = 0 then
+            "FizzBuzz"
+        else
+            if value%3 = 0 then
+                "Fizz"
+            else
+                if value%5 = 0 then
+                    "Buzz"
+                else
+                    string value
 
-
-
-
-
+    List.map stringifyNumber arr
 
 
 [<Fact>]
